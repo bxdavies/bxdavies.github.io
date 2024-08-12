@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BXDavies",
   "resources": {
-    "hash": "sha256-jaVbMa+XvVjNhaQaYniV+R8Aahpu2e5wAukGqqhI0fY=",
+    "hash": "sha256-V5o0pbxKPRJQPUKHCgGfb3ROE0RBINB2m8FU2Tf06BQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.pvkr2na9g4.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "BXDavies.wasm": "sha256-67qV6cWu0A+hm4KKKil4oo9MCa/avDiIBNUEMQqf2KI=",
+      "BXDavies.wasm": "sha256-rIbu1vtFtqAnHPa3NFkHZw1xQiTR6c0mFwQmd1N7dAk=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-TH9t55hhPiwEWEKPMgKzN713ohMRR0rxDyxMtjvf7GI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-u0nmW0YVn8C/Mvh4ImOT0Vnmdl8+BowtOjl2B1Qb4Is=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-gYtdHKif98uqlRnCU6DljcwSsaI6966yumVgpLYAXA4=",
