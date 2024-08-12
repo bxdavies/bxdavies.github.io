@@ -35,6 +35,7 @@ jobs:
       uses: nizarmah/auto-minify@v3
       with:
         overwrite: true
+        maxdepth: 4
         
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
