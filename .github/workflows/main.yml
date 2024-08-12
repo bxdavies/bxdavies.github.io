@@ -31,11 +31,12 @@ jobs:
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
-    - name: Replace js and css files with minified ones
-      uses: nizarmah/auto-minify@v3
+    - name: HTML/CSS/JS Minifier
+      uses: docker://devatherock/minify-js:3.1.0
       with:
-        overwrite: true
-        maxdepth: 4
+        add_suffix: false   
+        exclusions: |-        # Optional
+          ./github/workspace/bin/Release/net8.0/.*
         
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
