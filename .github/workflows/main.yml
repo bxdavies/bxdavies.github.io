@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 
 jobs:
-  deploy-to-github-pages:
+  deploy:
     # use ubuntu-latest image to run steps on
     runs-on: ubuntu-latest
     steps:
@@ -15,7 +15,7 @@ jobs:
     
     # sets up .NET Core SDK 3.1
     - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8
 
