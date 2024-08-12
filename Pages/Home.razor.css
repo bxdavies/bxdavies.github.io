@@ -1,0 +1,27 @@
+﻿.bg-container{
+    position: relative;
+}
+
+.bg-container .background .overlay{
+    position: absolute;
+}
+
+.overlay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  #00B7C3;
+    height: 100vh;
+}
+
+
+.background{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}

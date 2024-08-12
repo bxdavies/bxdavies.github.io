@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+<MudThemeProvider Theme="Theme.BXDaviesTheme" IsDarkMode="true"/>
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Never" Elevation="2" Anchor="Anchor.Right">
+        <NavMenu />
+    </MudDrawer>
+    <MudAppBar Elevation="1">
+        <MudLink Typo="Typo.h5" Href="/" Class="ml-3"> BXDavies </MudLink>
+        <MudSpacer/>
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
+    </MudAppBar>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.ExtraLarge">
+            @Body
+        </MudContainer>
+
+        
+    </MudMainContent>
+</MudLayout>
+
+@code{
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
